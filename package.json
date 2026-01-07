@@ -1,0 +1,21 @@
+{
+  "name": "mini-project-posts",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel index.html",
+    "server": "npx json-server --watch bd.json --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "parcel-transformer-hbs": "^1.0.4"
+  }
+}
