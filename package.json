@@ -17,5 +17,14 @@
   "dependencies": {
     "handlebars": "^4.7.8",
     "parcel-transformer-hbs": "^1.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrii-Avramenko/mini-project-posts.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Andrii-Avramenko/mini-project-posts/issues"
+  },
+  "homepage": "https://github.com/Andrii-Avramenko/mini-project-posts#readme"
 }

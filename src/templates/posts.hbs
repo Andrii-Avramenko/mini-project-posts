@@ -1,12 +1,14 @@
 <div class="post">
-  <h2></h2>
-  <p></p>
-  <button class="editPostButton" data-id="">Редагувати</button>
-  <button class="deletePostButton" data-id="">Видалити</button>
-  <div class="commentsContainer" data-id="">
+  <h2>{{title}}</h2>
+  <p>{{content}}</p>
+  <button class="editPostButton" data-id="{{id}}">Редагувати</button>
+  <button class="deletePostButton" data-id="{{id}}">Видалити</button>
+  <div class="commentsContainer" data-id="{{id}}">
     <h3>Коментарі:</h3>
     <ul>
-      <li></li>
+      {{#each comments}}
+        <li>{{body}}</li>
+      {{/each}}
     </ul>
     <form class="createCommentForm">
       <input
