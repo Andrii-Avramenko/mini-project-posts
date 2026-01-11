@@ -25,6 +25,7 @@ async function createPost(title, content) {
     id: toString(posts.length + 1),
     title,
     content,
+    comments: []
   };
   const options = {
     method: "POST",
