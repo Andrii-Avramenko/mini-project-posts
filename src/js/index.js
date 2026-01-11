@@ -1,4 +1,3 @@
-import transformer from "parcel-transformer-hbs";
 import templatePosts from "../templates/posts.hbs";
 
 const SERVER_API =
@@ -33,6 +32,7 @@ async function createPost(title, content) {
   };
   try {
     fetch(SERVER_API, options);
+    console.log('Пост має бути опублікований')
   } catch (error) {
     console.error(error);
   }
@@ -54,6 +54,7 @@ async function deletePost(id) {
     fetch(SERVER_API + '/' + id, {
       method: "DELETE"
     })
+    console.log('Пост має бути видалено')
   } catch (error) {
     console.error(error);
   }

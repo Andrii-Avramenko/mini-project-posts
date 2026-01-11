@@ -5,11 +5,15 @@
   <button class="deletePostButton" data-id="{{id}}">Видалити</button>
   <div class="commentsContainer" data-id="{{id}}">
     <h3>Коментарі:</h3>
-    <ul>
+    {{#if comments}}
+      <ul>
       {{#each comments}}
         <li>{{body}}</li>
       {{/each}}
     </ul>
+    {{else}}
+      <p>Поки що немає коментарів</p>
+    {{/if}}
     <form class="createCommentForm">
       <input
         type="text"
